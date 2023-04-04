@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "FantasticalLog (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "FantasticalLog (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

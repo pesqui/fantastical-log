@@ -1,0 +1,49 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<UserControl
+    x:Class="FantasticalLog.Views.CalendarControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <StackPanel
+            Height="40"
+            Padding="20,0,0,0"
+            Background="#F4F6F9"
+            >
+            <TextBlock
+                x:Uid="CalendarContent_Title"
+                Style="{StaticResource PageTitleStyle}" 
+                />
+        </StackPanel>
+        <StackPanel
+            Background="White"
+            Padding="20">
+
+            <StackPanel>
+                <TextBlock
+                    x:Uid="CalendarContent_Id"
+                    Margin="{StaticResource XSmallBottomMargin}"
+                    Style="{StaticResource SectionTextStyle}" 
+                    />
+                <TextBlock
+                    Text="{x:Bind ViewModel.Id, Mode=OneWay}"
+                    />
+            </StackPanel>
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                <TextBlock
+                    x:Uid="CalendarContent_Name"
+                    Margin="{StaticResource XSmallBottomMargin}"
+                    Style="{StaticResource SectionTextStyle}" 
+                    />
+                <TextBlock
+                    Text="{x:Bind ViewModel.Name, Mode=OneWay}"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
